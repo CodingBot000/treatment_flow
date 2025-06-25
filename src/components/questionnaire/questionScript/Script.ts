@@ -12,7 +12,7 @@ import {
   FaGoogle,
   FaComments
 } from 'react-icons/fa';
-import { SiLemon8 } from 'react-icons/si';
+// import { SiLemon8 } from 'react-icons/si';
 
 export const steps = [
   {
@@ -290,7 +290,7 @@ export const questions = {
 
   visitPaths: [
     { id: 'instagram', label: 'Instagram', description: 'Instagram', icon: FaInstagram },
-    { id: 'lemon8', label: 'Lemon8', description: 'Lemon8', icon: SiLemon8 },
+    { id: 'lemon8', label: 'Lemon8', description: 'Lemon8', icon: FaComments },
     { id: 'reddit', label: 'Reddit', description: 'Reddit', icon: FaReddit },
     { id: 'tiktok', label: 'TikTok', description: 'TikTok', icon: FaTiktok },
     { id: 'youtube', label: 'YouTube', description: 'YouTube', icon: FaYoutube },
