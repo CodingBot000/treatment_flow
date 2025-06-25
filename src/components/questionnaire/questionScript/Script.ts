@@ -4,6 +4,15 @@ import TreatmentGoalsStep from "../TreatmentGoalsStep";
 import VisitPathStep from "../VisitPathStep";
 import SkinConcernsStep from "../SkinConcernsStep";
 import HealthConditionStep from "../HealthConditionStep";
+import {
+  FaInstagram,
+  FaReddit,
+  FaTiktok,
+  FaYoutube,
+  FaGoogle,
+  FaComments
+} from 'react-icons/fa';
+import { SiLemon8 } from 'react-icons/si';
 
 export const steps = [
   {
@@ -280,18 +289,15 @@ export const questions = {
 
 
   visitPaths: [
-    { id: "instagram", label: "Instagram", description: "Instagram" },
-    { id: "lemon8", label: "Lemon8", description: "Lemon8" },
-    { id: "reddit", label: "Reddit", description: "Reddit" },
-    { id: "tiktok", label: "TikTok", description: "TikTok" },
-    { id: "youtube", label: "YouTube", description: "YouTube" },
-    {
-      id: "google_search",
-      label: "Google Search",
-      description: "Google_search",
-    },
-    { id: "Chat_Ai", label: "Chat AI", description: "Chat_Ai" },
-    { id: "other", label: "Other", description: "Other" },
+    { id: 'instagram', label: 'Instagram', description: 'Instagram', icon: FaInstagram },
+    { id: 'lemon8', label: 'Lemon8', description: 'Lemon8', icon: SiLemon8 },
+    { id: 'reddit', label: 'Reddit', description: 'Reddit', icon: FaReddit },
+    { id: 'tiktok', label: 'TikTok', description: 'TikTok', icon: FaTiktok },
+    { id: 'youtube', label: 'YouTube', description: 'YouTube', icon: FaYoutube },
+    { id: 'google_search', label: 'Google Search', description: 'Google_search', icon: FaGoogle },
+    { id: 'Chat_Ai', label: 'Chat AI', description: 'ChatGpt, Claude, Gemini, Perplexity, etc', icon: FaComments },
+    { id: 'other', label: 'Other', description: 'Other', icon: FaComments },
+  
   ],
 };
 

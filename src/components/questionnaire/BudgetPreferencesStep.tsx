@@ -230,7 +230,7 @@ const BudgetPreferencesStep: React.FC<BudgetPreferencesStepProps> = ({ data, onD
             />
             <label
               htmlFor="priority-confirm"
-              className="text-sm text-gray-600 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+              className="text-sm text-red-600 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
             >
               Please check this box when you have finalized the priority order
             </label>

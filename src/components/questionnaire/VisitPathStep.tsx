@@ -36,11 +36,19 @@ const VisitPathStep: React.FC<VisitPathStepProps> = ({ data, onDataChange }) => 
               }`}
               onClick={() => handleVisitPathChange(visitPath.id)}
             >
-              <h3 className="font-medium text-gray-900 mb-1">{visitPath.label}</h3>
-              <p className="text-sm text-gray-600">{visitPath.description}</p>
+              <div className="flex items-center space-x-2 mb-1">
+                {visitPath.icon && (
+                  <visitPath.icon className="w-5 h-5 text-gray-700" />
+                )}
+                <h3 className="font-medium text-gray-900">{visitPath.label}</h3>
+              </div>
+              {visitPath.id === 'Chat_Ai' && (
+                <p className="text-sm text-gray-600">{visitPath.description}</p>
+              )}
             </Card>
           ))}
         </div>
+
       </div>
 
     </div>
