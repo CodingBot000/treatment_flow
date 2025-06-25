@@ -105,7 +105,7 @@ const BeautyQuestionnaire = () => {
     if (!validateStepData(steps[currentStep].id, currentStepData)) {
       toast({
         variant: "destructive",
-        title: "필수 선택 항목",
+        title: "Please make a required selection",
         description: getValidationMessage(steps[currentStep].id),
         duration: 1500,
       });
@@ -140,7 +140,7 @@ const BeautyQuestionnaire = () => {
     if (!validateStepData(steps[currentStep].id, currentStepData)) {
       toast({
         variant: "destructive",
-        title: "필수 선택 항목",
+        title: "Please make a required selection",
         description: getValidationMessage(steps[currentStep].id),
         duration: 1500,
       });
